@@ -63,24 +63,20 @@ public class BarkSystem : MonoBehaviour
         }
     }
 
-    public string[] GetDialogue(string npcName, Dictionary<string, bool> gameState)
+    public string[] GetDialogue(string npcName, string gameState)
     {
         List<string> dialogues = new List<string>();
 
-        //Loop through all of the game states
-        foreach (KeyValuePair<string, bool> state in gameState)
+        
+        foreach (BarkEntry entry in barkList)
         {
-            if (state.Value == true)//If this current game state has been set to true
+            if (entry.NPCName == npcName && entry.State == gameState)//If this NPC has an entry for this state
             {
-                foreach (BarkEntry entry in barkList)
-                {
-                    if (entry.NPCName == npcName && entry.State == state.Key)//If this NPC has an entry for this state
-                    {
-                        dialogues.Add(entry.Dialogue);//Add it to the list of dialogues the NPC can say!
-                    }
-                }
+                dialogues.Add(entry.Dialogue);//Add it to the list of dialogues the NPC can say!
             }
         }
+            
+        
 
         return dialogues.ToArray();
     }
