@@ -13,6 +13,7 @@ public class Flag : MonoBehaviour
         {
             sr.enabled = false; //Make flag invisible
             //Change the Game State?
+            GameController.Instance.gameState = "flagTaken";
         }
     }
 

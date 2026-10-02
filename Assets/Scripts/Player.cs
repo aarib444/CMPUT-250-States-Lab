@@ -23,12 +23,13 @@ public class Player : AnimatedEntity
 
     [Header("Animation Settings")] 
     public List<Sprite> idle;
-    public List<Sprite> runCycle; // Delete this
+    public List<Sprite> running;
 
     // Start is called before the first frame update
     void Start()
     {
         AnimationSetup();
+        AnimationCycle = idle;
     }
 
     // Update is called once per frame
@@ -55,18 +56,21 @@ public class Player : AnimatedEntity
         //Going Left
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
+            AnimationCycle = running;
             direction += Vector3.left;
             buttonPressed = true;
         }
         //Going Right
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
+            AnimationCycle = running;
             direction += Vector3.right;
             buttonPressed = true;
         }
 
         if (!buttonPressed)
         {
+            AnimationCycle = idle;
             //Decrease velocity if not actively pressed
             if (velocity.magnitude > 0)
             {

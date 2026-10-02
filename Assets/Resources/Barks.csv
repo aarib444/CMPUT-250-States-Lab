@@ -1,3 +1,20 @@
 NPCName,State,Dialogue
-NPC,flagNotTaken,Test1
-NPC,flagNotTaken,Test2
+NPC,flagNotTaken,Don't touch my flag dude
+NPC,flagNotTaken,"Seriously, don't touch my flag. It's like… the only thing I own"
+NPC,flagNotTaken,You seem cool so I'll let you walk around
+NPC,flagNotTaken,sooo… you like pirates?
+NPC,flagNotTaken,I really like pirates. They're so cool with their ships and swords and eyepatches.
+NPC,flagNotTaken,"I wanted to be a pirate too. I even tried to join a pirate crew, but they kicked me out saying I was too soft."
+NPC,flagNotTaken,"I don't think I'm soft! I mean, I can stand here for HOURS. That takes true grit, right?"
+NPC,flagNotTaken,"If a actual pirate comes by, I'm gonna ask for an autograph before I tell them to back off."
+NPC,flagNotTaken,It’s a good flag. I washed it last Tuesday. Smells like sea salt and cheap soap. 
+NPC,flagTaken,HEY! You... you just took my flag! Right in front of my face!
+NPC,flagTaken,Wait... you didn't ask. You didn't buy it. You just... TOOK it!
+NPC,flagTaken,Woah. Is THAT what pirates do?! They just take whatever they want?!
+NPC,flagTaken,All this time I thought pirates were about standing guard and looking cool in hats...
+NPC,flagTaken,But YOU! You're a real pirate! You took my only prized possession without hesitation!
+NPC,flagTaken,You know what? You just opened my eyes. I've been doing this whole pirate thing wrong.
+NPC,flagTaken,Why am I crying over one flag when I could be taking ENTIRE TREASURES?!
+NPC,flagTaken,That's it! No more soft guard duty. I'm starting my life of crime today!
+NPC,flagTaken,I'm gonna go rob an orphanage! Right now! Wish me luck
+NPC,flagTaken,Thanks for stealing my flag dude! You changed my life!
